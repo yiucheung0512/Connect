@@ -1,4 +1,4 @@
-const API_BASE_URL = 'http://localhost:3001/api';
+const API_BASE_URL = 'https://connectsocial.onrender.com/api';
 
 class ApiService {
   async updateLocation(userId, latitude, longitude, username) {
