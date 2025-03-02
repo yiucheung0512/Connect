@@ -12,7 +12,7 @@ class SocketService {
 
   connect(userId) {
     // Connect to the backend server
-    this.socket = io('http://localhost:3001');
+    this.socket = io('https://connectsocial.onrender.com');
 
     // Register user with their ID
     this.socket.on('connect', () => {
