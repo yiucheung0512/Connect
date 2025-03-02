@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: my-app
+    env: node
+    buildCommand: |
+      cd frontend &&
+      npm install &&
+      npm run build &&
+      cd ../backend &&
+      npm install
+    startCommand: |
+      cd backend &&
+      npm start
